@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    width: 1200px;
+    height: 500px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 18%;
+   
+}
+
+.paragraph{
+    color: #fff;
+}
+
+.paragraph h2{
+    font-size: 45px;
+    font-weight: bolder; 
+}
+
+.paragraph p{
+    margin-top: 20px;
+}
+
+.box{
+    
+    background-color: #fff;
+    width: 400px;
+    height: 330px;
+    border-radius: 5px;
+}
+
+.btn1{
+    width: 400px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.input{
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 0 0px 25px;
+    background: url("./images/icon-error.svg");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    border-radius: 5px;
+ }
+
+ .input1{
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    margin: 30px 0px 0px 25px;
+    background: url("./images/icon-error.svg");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    border-radius: 5px;
+ }
+
+ .small {
+    color: red;
+    font-size: 8px;
+    margin: 0px 25px 0px auto;
+    width: fit-content;
+ }
+
+ .btn2 {
+     width: 350px;
+     background-color: hsl(154, 59%, 51%);
+     color: white;
+     padding: 10px 20px 10px 20px;
+     margin: 10px 0 10px 25px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .p{
+     font-size: 10px;
+     color: hsl(246, 25%, 77%);
+     text-align: center;
+ }
+
+ a{
+     text-decoration: none;
+     color: hsl(0, 100%, 74%);;
+ }
+
+ /* media query */
+
+@media (max-width :768px){
+
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+        height: 700px;
+        width: 400px;   
+    }
+
+     .container{
+         display: block;
+     }
+
+     .paragraph h2{
+         font-size: 25px;
+         margin-left: 40px; 
+     }
+
+     .paragraph p{
+         width: 80%;
+         text-align: center;
+     }
+
+     .btn1{
+         width: 270px;
+         padding: 15px;
+         line-height: 1.5em;
+         margin-top: 50px;
+     }
+
+     .box{
+         width: 270px;
+     }
+     .input, .input1{
+         width: 220px;
+         padding: 10px;
+     }
+
+     .btn2{
+         width: 220px;
+         padding: 10px;
+     }
+
+     .p{
+         width: 75%;
+         text-align: center;
+         margin-left: 50px;
+         line-height: 1.5em;
+     }
+
+     .small {
+        color: red;
+        font-size: 8px;
+        margin: 0px 25px 0px auto;
+        width: fit-content;
+     }
+ 
+ }
+
